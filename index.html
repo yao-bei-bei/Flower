@@ -20,33 +20,7 @@
 
 <body>
      <iframe style="width: 300px;height: 500px" src="https://localhost:82/service_translation_template?header=true"></iframe>
-<span id="ccc"></span>
-    <canvas id="cc" style="width:auto;height:600px;zoom: 0.5;position: absolute;left: -120px;top: 200px;"></canvas>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/flower.js"></script>
-    <script type="text/javascript">
-        var canvas = document.getElementById("cc"),
-            $canvas = $(canvas);
-        canvas.width = $canvas.width();
-        canvas.height = $canvas.height();
-        var ctx = canvas.getContext("2d");
-        heart = new Heart(500, 250, 16);
-        setTimeout(function(){
-          heart.start(ctx);
-        },500)
-            $("#ccc").fadeIn();
-            $("#ccc").fadeIn("slow");
-            $("#ccc").fadeIn(1500)
-        $(canvas).click(function(ex) {
-            new Flower(ex.offsetX, ex.offsetY, ctx).draw();
-        });
-        function changeColor(){
-            var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray";
-            color=color.split("|");
-            document.getElementById("ccc").style.color=color[parseInt(Math.random() * color.length)];
-        }
-        setInterval("changeColor()",500);
-    </script>
+
 </body>
 
 </html>
